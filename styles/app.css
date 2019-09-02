@@ -1,4 +1,49 @@
+:root {
+  --strong-cyan: hsl(171, 66%, 44%);
+  --light-blue: hsl(233, 100%, 69%);
+  --dark-gray-blue: hsl(210, 10%, 33%);
+  --gray-blue: hsl(201, 11%, 66%);
+  --grid-width: 1440px;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  background-color: red;
+  background-color: #fff;
+  color: var(--gray-blue);
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--dark-gray-blue);
+  font-weight: 600;
 }
 /*# sourceMappingURL=app.css.map */

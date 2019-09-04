@@ -112,6 +112,12 @@ footer {
 
     max-width: 15.4rem;
     margin: 5.7rem auto;
+
+    & img:hover,
+    & img:active {
+        filter: invert(64%) sepia(12%) saturate(2282%) hue-rotate(122deg)
+            brightness(94%) contrast(86%);
+    }
 }
 
 .attribution {

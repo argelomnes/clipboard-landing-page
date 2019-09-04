@@ -1,5 +1,6 @@
 .btn {
-    // width: 100%;
+    display: block;
+
     height: 5.3rem;
     margin-bottom: 2.7rem;
     padding-top: 0.5rem;
@@ -14,10 +15,14 @@
     font-weight: 600;
     letter-spacing: 0.1rem;
     line-height: 2.3;
-    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
-    display: block;
+    text-shadow: 0 0.2rem 0 rgba(0, 0, 0, 0.2);
 
     cursor: pointer;
+
+    &:hover {
+        position: relative;
+        top: 1px;
+    }
 
     &--ios {
         border: solid 1px darken($strong-cyan, 8%);
@@ -25,6 +30,15 @@
         background-color: $strong-cyan;
         box-shadow: 0 0.3rem 0 0.1rem darken($strong-cyan, 8%),
             0 0.9rem 2rem lighten($strong-cyan, 30%);
+
+        &:hover,
+        &:active {
+            border: solid 1px darken($strong-cyan-light, 8%);
+
+            background-color: $strong-cyan-light;
+            box-shadow: 0 0.2rem 0 0.1rem darken($strong-cyan-light, 8%),
+                0 0.8rem 2rem lighten($strong-cyan, 10%);
+        }
     }
 
     &--mac {
@@ -33,6 +47,15 @@
         background-color: $blue-light;
         box-shadow: 0 0.3rem 0 0.1rem darken($blue-light, 8%),
             0 0.9rem 2rem lighten($blue-light, 15%);
+
+        &:hover,
+        &:active {
+            border: solid 1px darken($blue-lighter, 8%);
+
+            background-color: $blue-lighter;
+            box-shadow: 0 0.2rem 0 0.1rem darken($blue-lighter, 8%),
+                0 0.8rem 2rem lighten($blue-light, 10%);
+        }
     }
 }
 

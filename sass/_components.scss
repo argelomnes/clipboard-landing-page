@@ -1,5 +1,5 @@
-button {
-    width: 100%;
+.btn {
+    // width: 100%;
     height: 5.3rem;
     margin-bottom: 2.7rem;
     padding-top: 0.5rem;
@@ -13,26 +13,27 @@ button {
     font-size: 1.7rem;
     font-weight: 600;
     letter-spacing: 0.1rem;
-    line-height: 100%;
+    line-height: 2.3;
     text-shadow: 0 2px 0 rgba(0, 0, 0, 0.2);
+    display: block;
 
     cursor: pointer;
-}
 
-.btn-ios {
-    border: solid 1px darken($strong-cyan, 8%);
+    &--ios {
+        border: solid 1px darken($strong-cyan, 8%);
 
-    background-color: $strong-cyan;
-    box-shadow: 0 0.3rem 0 0.1rem darken($strong-cyan, 8%),
-        0 0.9rem 2rem lighten($strong-cyan, 30%);
-}
+        background-color: $strong-cyan;
+        box-shadow: 0 0.3rem 0 0.1rem darken($strong-cyan, 8%),
+            0 0.9rem 2rem lighten($strong-cyan, 30%);
+    }
 
-.btn-mac {
-    border: solid 1px darken($blue-light, 8%);
+    &--mac {
+        border: solid 1px darken($blue-light, 8%);
 
-    background-color: $blue-light;
-    box-shadow: 0 0.3rem 0 0.1rem darken($blue-light, 8%),
-        0 0.9rem 2rem lighten($blue-light, 15%);
+        background-color: $blue-light;
+        box-shadow: 0 0.3rem 0 0.1rem darken($blue-light, 8%),
+            0 0.9rem 2rem lighten($blue-light, 15%);
+    }
 }
 
 .desktop {

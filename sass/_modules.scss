@@ -1,126 +1,219 @@
-.container {
-    width: 100%;
-    max-width: $grid-width;
-    padding-right: 3.2rem;
-    padding-left: 3.2rem;
+header {
+    margin: 12.2rem 0 16.5rem;
 
-    text-align: center;
-}
-
-.logo {
-    margin: auto;
-
-    footer & {
-        max-width: 5.6rem;
+    @media (--tablet) {
+        margin: 13.1rem 0;
     }
 }
 
-header {
-    margin: 12.2rem 0 7.3rem;
+aside {
+    @media (--tablet) {
+        max-width: 47rem;
+        padding: 6.7rem 0 0 11rem;
+
+        text-align: left;
+
+        & > div {
+            margin-bottom: 5.5rem;
+        }
+    }
 }
 
-section {
-    padding: 6.3rem 0 7.4rem;
+footer {
+    margin-top: 17.4rem;
+
+    background-color: $gray-light;
+
+    @media (--tablet) {
+        margin-top: 12.4rem;
+        padding: 4.3rem 0;
+    }
+}
+
+.inner-wrapper {
+    max-width: 71rem;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-md {
+    @media (--tablet) {
+        display: flex;
+    }
+}
+
+.pt-3-md {
+    @media (--tablet) {
+        padding-top: 3.1rem;
+    }
+}
+
+.mx-w80 {
+    @media (--tablet) {
+        max-width: 80%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
+.snippets {
+    margin-bottom: 18.3rem;
+
+    @media (--tablet) {
+        margin-bottom: 10rem;
+    }
+}
+
+.access {
+    margin-bottom: 10.7rem;
+
+    @media (--tablet) {
+        margin-bottom: 12.7rem;
+    }
 }
 
 .workflow {
-    padding-top: 3.36rem;
+    margin-bottom: 8.1rem;
+
+    @media (--tablet) {
+        margin-bottom: 11rem;
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
 
     &--tools {
-        padding-top: 3.7rem;
+        padding-top: 3.5rem;
+
+        @media (--tablet) {
+            padding-top: 2.35rem;
+        }
 
         &-item {
-            margin-bottom: 5.6rem;
+            padding: 0 0 0.7rem;
+
+            @media (--tablet) {
+                flex-direction: column;
+                align-self: baseline;
+
+                max-width: calc(100% / 3);
+                padding: 0 1.5rem;
+            }
         }
 
         & img {
-            margin: 0 auto 3.7rem;
+            margin: auto;
         }
 
         & h3 {
-            margin-bottom: 1.5rem;
+            margin-top: 4rem;
+            margin-bottom: 1.8rem;
+
+            @media (--tablet) {
+                margin: 3.9rem 0 1.5rem;
+            }
         }
     }
 }
 
 .clients {
-    display: flex;
-
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
 
-    height: 65vh;
-    padding-top: 1.4rem;
+    min-height: 54vh;
+    margin-bottom: 17.1rem;
+
+    @media (--tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+
+        margin-bottom: 16.2rem;
+        padding-right: 2.1rem;
+        padding-left: 2.1rem;
+        min-height: unset;
+    }
 }
 
-.google {
-    max-width: 14rem;
-}
+.main-footer {
+    &--wrap {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
 
-.ibm {
-    max-width: 11.8rem;
-}
+        @media (--tablet) {
+            flex-direction: row;
 
-.microsoft {
-    max-width: 13.15rem;
-}
-
-.hp {
-    max-width: 11.4rem;
-}
-
-.vector-graphics {
-    max-width: 10.65rem;
-}
-
-.clipboard-download {
-    padding-top: 9.3rem;
-}
-
-footer {
-    margin-top: 7rem;
-    padding: 5.2rem 0;
-
-    background-color: $gray-light;
-}
-
-.footer--links {
-    margin-top: 4rem;
-
-    & li {
-        margin: 2.15rem 1rem;
+            padding-right: 2.1rem;
+            padding-left: 2.1rem;
+            align-items: flex-start;
+        }
     }
 
-    & a {
-        padding: 1.8rem;
+    &--logo-container {
+        @media (--tablet) {
+            width: 25.2rem;
+        }
+    }
 
-        color: #4c545d;
+    &--links li {
+        width: 18.3rem;
+        margin-bottom: 2.7rem;
+
         font-size: 1.8rem;
+
+        @media (--tablet) {
+            margin-bottom: 1.9rem;
+        }
+    }
+
+    &--links a {
+        padding: 1rem;
 
         &:hover,
         &:active {
             color: $strong-cyan;
         }
     }
-}
 
-.social-icons {
-    display: flex;
+    &--links {
+        flex-wrap: wrap;
 
-    justify-content: space-around;
+        @media (--tablet) {
+            text-align: left;
+        }
+    }
 
-    max-width: 15.4rem;
-    margin: 5.7rem auto;
+    &--social {
+        align-items: center;
+        justify-content: space-between;
 
-    & img:hover,
-    & img:active {
-        filter: invert(64%) sepia(12%) saturate(2282%) hue-rotate(122deg)
-            brightness(94%) contrast(86%);
+        min-width: 15.4rem;
+        margin: 2.5rem auto;
+
+        @media (--tablet) {
+            justify-content: flex-end;
+
+            width: 38.6rem;
+            margin-top: 2rem;
+
+            & a:not(:last-child) {
+                margin-right: 2rem;
+            }
+        }
     }
 }
 
-.attribution {
-    margin: 0;
-    padding: 1rem;
+.social--icon {
+    max-width: 2.4rem;
+
+    margin-left: 0.4rem;
+
+    &:hover,
+    &:active {
+        filter: invert(64%) sepia(12%) saturate(2282%) hue-rotate(122deg)
+            brightness(94%) contrast(86%);
+    }
 }

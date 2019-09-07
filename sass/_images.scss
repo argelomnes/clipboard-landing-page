@@ -108,3 +108,11 @@ img {
 .hp {
     max-width: 135px;
 }
+
+.social--icon {
+    &:hover,
+    &:active {
+        filter: invert(64%) sepia(12%) saturate(2282%) hue-rotate(122deg)
+            brightness(94%) contrast(86%);
+    }
+}

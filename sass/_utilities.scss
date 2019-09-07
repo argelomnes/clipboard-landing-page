@@ -1,0 +1,31 @@
+.flex {
+    display: flex;
+
+    &-phone {
+        @media (--phone) {
+            display: flex;
+        }
+    }
+
+    &-tablet {
+        @media (--tablet) {
+            display: flex;
+        }
+    }
+
+    &-laptop {
+        @media (--laptop) {
+            display: flex;
+        }
+    }
+
+    &-desktop {
+        @media (--desktop) {
+            display: flex;
+        }
+    }
+}
+
+.order-1 {
+    order: 1;
+}

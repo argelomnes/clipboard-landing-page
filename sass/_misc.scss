@@ -1,0 +1,8 @@
+.attribution {
+    margin: 0;
+    padding: 1rem;
+
+    @media (--tablet) {
+        padding: 0;
+    }
+}

@@ -1,0 +1,110 @@
+img {
+    display: block;
+
+    max-width: 100%;
+
+    .workflow & {
+        margin: auto;
+    }
+
+    .clients & {
+        margin: 3rem;
+
+        @media (--phone-s) {
+            margin: 5rem;
+        }
+
+        @media (--tablet) {
+            margin: 0;
+        }
+    }
+
+    .footer--social & {
+        padding: 1.6rem;
+    }
+}
+
+.logo {
+    max-width: 7.5rem;
+    margin: 0 auto 2.7rem;
+
+    @media (--phone-s) {
+        max-width: 12.5rem;
+        margin-bottom: 6.7rem;
+    }
+
+    footer & {
+        max-width: 5.5rem;
+        margin: 0 auto 4.5rem;
+    }
+}
+
+.desktop {
+    margin: 0 auto 5.5rem;
+    padding-top: 1.8rem;
+
+    @media (--desktop) {
+        display: inline-block;
+
+        max-width: 75.2rem;
+        margin-right: 0;
+        margin-left: -22.4rem;
+    }
+}
+
+.devices {
+    max-width: calc(100% + 3.2rem);
+    margin-left: -1.6rem;
+}
+
+.google,
+.microsoft {
+    width: 44%;
+
+    @media (--phone) {
+        width: 34%;
+    }
+    @media (--tablet) {
+        width: 19%;
+    }
+}
+
+.ibm,
+.hp {
+    width: 37%;
+
+    @media (--phone) {
+        width: 27%;
+    }
+    @media (--tablet) {
+        width: 16%;
+    }
+}
+
+.vector-graphics {
+    width: 34%;
+    max-width: 125px;
+
+    @media (--phone) {
+        width: 24%;
+    }
+    @media (--tablet) {
+        width: 14%;
+    }
+}
+
+.google {
+    max-width: 165px;
+}
+
+.microsoft {
+    max-width: 161px;
+}
+
+.ibm {
+    max-width: 139px;
+}
+
+.hp {
+    max-width: 135px;
+}
